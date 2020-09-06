@@ -4,19 +4,18 @@ import numpy as np
 nL = 10
 nR = 10
 
-n = np.arange(-nL,nR)  
+n = np.arange(-nL,nR+1)  
 u = np.array([np.zeros((1,nL))])
-u = np.append(u,np.array([np.ones((1,nR))]))
+u = np.append(u,np.array([np.ones((1,nR+1))]))
 
 u1 = np.array([np.zeros((1,nL+2))])
-u1 = np.append(u1,np.array([np.ones((1,nR-2))]))
+u1 = np.append(u1,np.array([np.ones((1,nR-1))]))
 
 u2 = np.array([np.zeros((1,nL+7))])
-u2 = np.append(u2,np.array([np.ones((1,nR-7))]))
+u2 = np.append(u2,np.array([np.ones((1,nR-6))]))
 
 u3 = u[::-1]
-
-u4 = np.array([np.ones((1,nL+4))])
+u4 = np.array([np.ones((1,nL+5))])
 u4 = np.append(u4,np.array([np.zeros((1,nR-4))]))
 
 u5 = 2*(u1-u2-u3+u4)
@@ -27,7 +26,7 @@ print('u4 =',u4)
 print('x =',u5)
 plt.subplot(4,1,1)
 plt.stem(n,u5)
-plt.title('Shifted unit step x[n]')
+plt.title('y[n]')
 plt.xlabel('Time (n)')
 plt.ylabel('Amplitude')
 

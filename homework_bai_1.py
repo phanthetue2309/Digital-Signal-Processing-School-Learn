@@ -4,9 +4,9 @@ import numpy as np
 nL = 10
 nR = 10
 
-n = np.arange(-nL,nR)  
+n = np.arange(-nL,nR+1)  
 u = np.array([np.zeros((1,nL))])
-u = np.append(u,np.array([np.zeros((1,nR))]))
+u = np.append(u,np.array([np.zeros((1,nR+1))]))
 u[9] = u[11]= -2
 u[10] = 4
 u[12] = 2
