@@ -1,0 +1,23 @@
+Phân đoạn tín hiệu âm thanh tiếng nói và khoảng lặng.
+- NL tín hiệu : E =  xích ma ( - vô cực -> vô cực ) x[n] mũ 2
+NL của cửa sổ TH thứ k với n thuộc nL,nR
+NL : năng lượng 
+1./Phân tín hiệu thành các khung (cửa sổ) với độ dài 10ms số với độ dài 10ms không chồng lên nhau 
+2./Tính NL ngắn hạn của TH trong mỗi khung. Vẽ đồ thị đường NL ngắn hạn của TH E(k)
+3./Tìm biên chuẩn của các đoạn TN và KL vẽ đồ thị biên trên TH 
+TN : tiếng nói
+KL : khoảng lặng
+độ dài 1 khoảng lặng >= 200ms 
+output : là các biên thuật toán tìm được 
++ nhãn của các biên đó ( không cần )
+4./Xác định ngưỡng năng lượng chuyển hóa để phân đoạn được mà không phụ thuộc vào dải động 
+biên độ của 1 Tín hiệu
+
+sử dụng hàm line 
+
+X (norm)[0,1] = (X-Xmin )/(Xmax - Xmin)
+X (norm)[0,1] = X - Xngang / ơx
+
+figure.eps, .bmp
+
+test trên nhiều trường hợp lập bảng sai số rồi kết luận => code
